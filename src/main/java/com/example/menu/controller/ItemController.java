@@ -28,7 +28,7 @@ import java.util.Optional;
 
     //New! GET controller methods
 
-@GetMapping
+    @GetMapping
     public ResponseEntity<List<Item>> findAll() {
             List<Item> items = service.findAll();
             return ResponseEntity.ok().body(items);
